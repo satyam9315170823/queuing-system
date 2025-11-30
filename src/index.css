@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-black text-gray-200 overflow-x-hidden;
+}
+
+a {
+  @apply text-indigo-400 hover:text-indigo-300 transition-colors duration-300;
+}
+
+button {
+  @apply bg-zinc-900 rounded-xl border border-zinc-700 px-5 py-3 
+  text-base font-medium hover:border-indigo-500 transition-all duration-300;
+}
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+/* Tailwind scrollbar custom class */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.6);
+  border-radius: 9999px;
+}

@@ -1,0 +1,19 @@
+#root {
+  @apply max-w-5xl mx-auto p-6 text-center min-h-screen flex flex-col items-center justify-center;
+}
+
+.logo {
+  @apply h-24 p-4 transition-all duration-300;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2rem #6366f1aa);
+}
+
+.card {
+  @apply bg-zinc-900 border border-zinc-800 p-6 rounded-2xl shadow-xl;
+}
+
+.read-the-docs {
+  @apply text-gray-500;
+}
